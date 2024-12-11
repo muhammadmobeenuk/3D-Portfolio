@@ -1,0 +1,12 @@
+:root {
+    --bg-colour: #081b29;
+    --main-colour: #00abf0;
+    --text-colour:#333;
+    --second-text-colour:#555;
+    --white-colour:#fff;
+    --cover-colour:linear-gradient (45deg, #00abf0, #006e9a);
+    --page-colour:linear-gradient (90deg ,#fff, #ddd);
+    --border:.125rem solid #00abf0;
+    --box-shadow:0 0 .6rem rgba(0 ,0 , 0, .2);
+    
+}
