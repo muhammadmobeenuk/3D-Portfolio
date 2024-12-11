@@ -1,12 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    bottom: none;
+    outline: none;
+    font-family: "poppins", "sans-sarify";
+
+}
+
 :root {
     --bg-colour: #081b29;
     --main-colour: #00abf0;
     --text-colour:#333;
     --second-text-colour:#555;
     --white-colour:#fff;
-    --cover-colour:linear-gradient (45deg, #00abf0, #006e9a);
-    --page-colour:linear-gradient (90deg ,#fff, #ddd);
+    --cover-colour: linear-gradient (45deg, #00abf0, #006e9a);
+    --page-colour: linear-gradient (90deg ,#fff, #ddd);
     --border:.125rem solid #00abf0;
     --box-shadow:0 0 .6rem rgba(0 ,0 , 0, .2);
     
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-colour);
+
+}
+
+.wrapper{
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+    background:red;
+}
+
+.cover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: var(--cover-colour);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: .6rem ;
+    border-bottom-left-radius: .6rem ;
+
+}
+
+.cover.cover.right.turn{
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
 }
