@@ -298,3 +298,95 @@ body {
 .nextprevent i:hover{
   color: var(--main-colour);
 }
+
+
+.services-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.services-box .services-content {
+  width: 10rem;
+  height: 14rem;
+  text-align: center;
+  flex: 1 1 11rem;
+  border: var(--border);
+  border-radius: .5rem;
+  padding: .8rem .5rem 1.1rem;
+  transition: .3s ease  ;
+}
+.services-box .services-content:hover{
+  box-shadow: var(--box-shadow);
+}
+
+.services-content a {
+  margin-top: .8rem;
+}
+
+.services-content i {
+  font-size: 2.5rem;
+  color: var(--main-colour);
+}
+
+.services-content h3{
+  font-size: 1.3rem;
+}
+
+.services-content p{
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: .2rem 0 .5rem;
+}
+
+.services-content .btn {
+  width: 8rem;
+  height: 2.5rem;
+}
+
+.services-content .btn:hover{
+  background: var(--page-colour);
+  color: var(--main-colour);
+}
+
+.skills-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.skills-box .skills-content {
+  flex: 1 1 20rem;
+}
+
+.skills-content h3 {
+  font-size: 1.3rem;
+  line-height: 1;
+  margin-bottom: .7rem;
+}
+
+.skills-content .content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.skills-content .content span{
+  display: inline-flex;
+  width: 7.6rem;
+  height: 3.6rem;
+  font-weight: 600;
+  border: var(--border);
+  border-radius: .3rem;
+  justify-content: center;
+  align-items: center;
+}
+.skills-content .content i{
+  color: var(--main-colour);
+  font-size: 1.3rem;
+  margin: .350rem ;
+ }
+
+.skills-content .content span:hover{
+  box-shadow:  var(--box-shadow);
+}
