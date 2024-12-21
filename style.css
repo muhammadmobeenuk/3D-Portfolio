@@ -261,7 +261,8 @@ body {
   transform: rotateX(-50%);
 }
 
-.nextprevent {
+.nextprev-btn {
+  background: red;
   position: absolute;
   font-size: larger;
   bottom: 0.9rem;
@@ -275,11 +276,12 @@ body {
   transition: 0.5s;
 }
 
-.nextprevent i:hover {
+.nextprev-btn  i:hover {
   color: var(--main-colour);
 }
 
-.nextprevent.back {
+.nextprev-btn.back{
+  background: red;
   position: absolute;
   font-size: larger;
   bottom: 0.9rem;
@@ -293,7 +295,7 @@ body {
   transition: 0.5s;
 }
 
-.nextprevent i:hover {
+.nextprev-btn  i:hover {
   color: var(--main-colour);
 }
 
