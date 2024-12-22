@@ -178,11 +178,12 @@ body {
   position: absolute;
   right: 0;
   transform-style: preserve-3d;
+  transform-origin: left;
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1) ;
 }
 
 .book-page.page-right.turn {
   transform: rotateY(-180deg);
-  transform-origin: left;
 }
 
 .book-page .page-front,
@@ -280,7 +281,6 @@ body {
 }
 
 .nextprev-btn.back{
-  background: red;
   position: absolute;
   font-size: larger;
   bottom: 0.9rem;
@@ -421,7 +421,6 @@ body {
   box-shadow: var(--box-shadow);
 }
 .portfolio-box .info-box {
-  /* background: red; */
   margin: 1rem 0 1.2rem;
 }
 
