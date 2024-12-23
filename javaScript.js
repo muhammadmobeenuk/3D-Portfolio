@@ -24,7 +24,6 @@ pageNextBtn.forEach((el, index) => {
 
 //Turn to the contactMe page and then contact me to profile page
 
-
 //book pages
 const bookPages = document.querySelectorAll(".book-page.page-right");
 //contact me page
@@ -43,10 +42,10 @@ contactMeBtn.onclick = () => {
 //Back to profile page
 let totalpages = bookPages.length;
 let pageNumber = 0;
-function backToProfilePage(){
+function backToProfilePage() {
   pageNumber--;
   if (pageNumber < 0) {
-    pageNumber = totalpages -1;
+    pageNumber = totalpages - 1;
   }
 }
 const backToProfile = document.querySelector(".back-profile");
@@ -62,3 +61,31 @@ backToProfile.onclick = () => {
     }, (index + 1) * 200 + 100);
   });
 };
+
+//opening animation
+const coverRight = document.querySelector(".cover.cover-right");
+const pageLeft = document.querySelector(".book-page.page-left");
+
+// opening right animation oon load
+setTimeout(() => {
+  coverRight.classList.add("turn");
+}, 2100);
+setTimeout(() => {
+  coverRight.style.zIndex = -1;
+}, 2800);
+
+// opening left animation oon load
+setTimeout(() => {
+  pageLeft.style.zIndex = 20;
+}, 3200);
+//opening animation  all pages in same way
+bookPages.forEach((_, index) => {
+  setTimeout(() => {
+    backToProfilePage();
+    bookPages[pageNumber].classList.remove("turn");
+    setTimeout(() => {
+      backToProfilePage();
+      bookPages[pageNumber].style.zIndex = 10 + index;
+    }, 500);
+  }, (index + 1) * 200 + 2100);
+});

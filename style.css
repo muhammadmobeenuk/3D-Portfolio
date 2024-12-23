@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-colour);
   color: var(--text-colour);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -34,9 +35,21 @@ body {
   width: 64rem;
   height: 45rem;
   padding: 2rem;
+  perspective: 250rem;
   background: var(--main-colour);
+  animation: show-animation 2s forwards ;
 }
 
+@keyframes show-animation {
+  0%,30%{
+    opacity: 0;
+    transform: rotate(-20deg);;
+  }
+  100%{
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
 .cover {
   position: absolute;
   top: 0;
@@ -54,6 +67,10 @@ body {
 }
 
 .cover.cover-right {
+  z-index: 100;
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.155, 1);
+}
+.cover.cover-right.turn {
   transform: rotateY(180deg);
 }
 
@@ -73,6 +90,9 @@ body {
   box-shadow: var(--box-shadow);
   display: flex;
   padding: 1.5rem;
+}
+.book-page.page-left {
+  box-shadow: -.6rem .6rem .6rem rgba(0, 0, 0, .1);
 }
 
 .profile-page {
@@ -180,7 +200,7 @@ body {
   right: 0;
   transform-style: preserve-3d;
   transform-origin: left;
-  transition: transform 1s cubic-bezier(0.645, 0.045, 0.155, 1) ;
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.155, 1);
 }
 
 .book-page.page-right.turn {
@@ -277,11 +297,11 @@ body {
   transition: 0.5s;
 }
 
-.nextprev-btn  i:hover {
+.nextprev-btn i:hover {
   color: var(--main-colour);
 }
 
-.nextprev-btn.back{
+.nextprev-btn.back {
   position: absolute;
   font-size: larger;
   bottom: 0.9rem;
@@ -295,7 +315,7 @@ body {
   transition: 0.5s;
 }
 
-.nextprev-btn  i:hover {
+.nextprev-btn i:hover {
   color: var(--main-colour);
 }
 
