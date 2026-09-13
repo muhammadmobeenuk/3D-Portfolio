@@ -1,0 +1,13 @@
+{
+  "name": "3d-portfolio",
+  "version": "1.0.0",
+  "description": "3D Portfolio Interactive Book",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["portfolio", "3d", "interactive"],
+  "author": "M MOBEEN",
+  "license": "ISC"
+}
