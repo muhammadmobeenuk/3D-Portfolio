@@ -1,13 +1,13 @@
 {
-  "name": "3d-portfolio",
+  "name": "3d-portfolio-book",
   "version": "1.0.0",
-  "description": "3D Portfolio Interactive Book",
-  "main": "server.js",
+  "description": "3D Portfolio Book for M Mobeen",
   "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": ["portfolio", "3d", "interactive"],
-  "author": "M MOBEEN",
-  "license": "ISC"
+  "devDependencies": {
+    "vite": "^6.2.0"
+  }
 }
